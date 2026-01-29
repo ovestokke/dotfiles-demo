@@ -17,7 +17,7 @@ if status is-interactive
         abbr --add lt 'eza --tree --icons --group-directories-first'
         abbr --add l 'eza -l --icons --group-directories-first'
     end
-
+    #
     # bat (better cat)
     if type -q bat
         abbr --add cat 'bat --style=plain'
