@@ -1,0 +1,17 @@
+encryption = "age"
+
+[edit]
+    command = "nvim"
+
+[merge]
+    command = "nvim"
+    args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
+
+[git]
+    # autoAdd = true
+    autoCommit = true # add + commit
+    autoPush = true
+
+[age]
+    identity = "/home/azureuser/.config/chezmoi/key.txt"
+    recipient = "age15c2dapl29gx4uvmcdyrf2ydlylmq3cd2tn9ema6sp7pgj0gtxchqld5t8n"
