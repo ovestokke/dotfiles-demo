@@ -34,6 +34,10 @@ if status is-interactive
         abbr --add grep rg
     end
 
+    if type -q just
+        abbr --add j 'just -g'
+    end
+
     # Git
     abbr --add g git
     abbr --add gs 'git status'
