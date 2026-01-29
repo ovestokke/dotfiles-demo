@@ -1,17 +1,14 @@
+
 [user]
-    name = Ove Stokke
-{{- if eq .chezmoi.hostname "demo-ubuntu" }}
-    email = 14012923+ovestokke@users.noreply.github.com
-{{- else if eq .chezmoi.hostname "demo-windows" }}
-    email = ove.stokke@capgemini.com
-{{- end }}
+	name = Ove Stokke
+	email = 14012923+ovestokke@users.noreply.github.com
+
+
+
 
 [core]
-{{- if eq .chezmoi.os "linux" }}
     editor = nvim
-{{- else if eq .chezmoi.os "windows" }}
-    editor = notepad
-{{- end }}
+
 
 [init]
     defaultBranch = main
